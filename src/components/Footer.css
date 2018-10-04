@@ -1,0 +1,127 @@
+.footer {
+  background-color: #4A4A4D;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 15vh;
+}
+
+.white-text {
+  color: white;
+}
+
+.blue-text {
+  color: #65abe2;
+}
+
+ul {
+  text-decoration: none;
+}
+
+ul li a {
+font-weight: lighter;
+}
+
+/* Sections - Footer */
+#upper-row-footer, #lower-row-footer {
+  display: block;
+  /*flex-direction: column;*/
+}
+
+#upper-row-footer, #lower-row-footer > h5 {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+#upper-row-footer {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10%;
+}
+
+#lower-row-footer {
+  height: 20vh;
+  background-color: #535356;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10%;
+  vertical-align: center;
+  font-size: 12px;
+}
+
+#upper-row-footer div > h5 {
+  margin: 0;
+}
+
+#upper-row-footer div > ul {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Divs of Upper-row-footer*/
+
+#aboutNXP, #resources, #social-media, #news {
+  width: 25%;
+  text-align: left;
+}
+
+#terms-section, #copyrights {
+  width: 50%;
+}
+
+#social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+#social-media ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+#social-media ul li {
+  height: auto;
+}
+
+#social-media ul li > i {
+  margin: 0 4px;
+  font-size: 1.9em;
+}
+
+#news h5 > span {
+  float: right;
+}
+
+#news h5 span > i {
+  margin: 0 5px;
+}
+
+#news p {
+  margin: 5px 0;
+  font-size: 12.5px;
+  font-weight: lighter;
+}
+
+#news h4 {
+  font-weight: lighter;
+}
+
+
+/* Divs of Lower-row-footer*/
+#lower-row-footer #terms-section span {
+  /*border-right-width: 1px solid white;*/
+  border-right: 1px solid lightgray;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+#lower-row-footer #copyrights p {
+  margin: 0;
+  color: lightgray;
+  float: right;
+}

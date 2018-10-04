@@ -10,21 +10,25 @@
   width: 100%;
 }
 
-.header {
-  border: 1px solid blue;
-  flex: 1;
-  height: 5vh;
-}
-
 .main {
   border: 1px solid red;
+  box-sizing: border-box;
   flex: 4;
   height: 80vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.footer {
-  border: 1px solid green;
-  background-color: gray;
-  flex: 2;
-  height: 15vh;
+ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.white-text {
+  color: white;
 }

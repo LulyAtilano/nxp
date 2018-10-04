@@ -10,15 +10,6 @@
   width: 100%;
 }
 
-.main {
-  border: 1px solid red;
-  box-sizing: border-box;
-  flex: 4;
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-}
-
 ul {
  list-style-type: none;
  padding: 0;
@@ -31,4 +22,9 @@ ul li a {
 
 .white-text {
   color: white;
+}
+
+.blue-text {
+  color: #65abe2;
+  font-weight: 500;
 }

@@ -8,20 +8,8 @@
   height: 15vh;
 }
 
-.white-text {
-  color: white;
-}
-
 .blue-text {
   color: #65abe2;
-}
-
-ul {
-  text-decoration: none;
-}
-
-ul li a {
-font-weight: lighter;
 }
 
 /* Sections - Footer */

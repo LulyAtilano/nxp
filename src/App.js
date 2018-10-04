@@ -1,51 +1,13 @@
 import React, { Component } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="header">
-          <section id="section-user">
-            <div id="logo">
-              <img src="../../assets/nxp.png"/>
-            </div>
-            <div id="user-lang-cart">
-              <span> 
-                <i className="fas fa-user-alt"></i>
-                LUIS JAVIER 
-                <i className="fas fa-caret-down"></i>
-              </span>
-              <span>
-                <i className="fas fa-globe"></i>
-                ENGLISH
-                <i className="fas fa-caret-down"></i>
-              </span>
-              <span>
-                <i className="fas fa-shopping-cart"></i>
-                CART
-              </span>
-            </div>
-          </section>
-          <nav>
-            <div id="section-search">
-              <ul>
-                <li className="section"> <a> PRODUCTS </a> </li>
-                <li className="section"> <a> SOLUTIONS </a> </li>
-                <li className="section"> <a> SUPPORT </a> </li>
-                <li className="section"> <a> ABOUT </a> </li>
-              </ul>
-            </div>
-            <div id="search">
-              <span> 
-                ALL 
-                <i className="fas fa-caret-down"></i>
-              </span>
-              <input type="text" placeholder="Search..."/>
-              <i className="fas fa-search"></i>
-            </div>
-          </nav>
-        </header>
+        <Header/>
         <main className="main">
           <div className="carousel">
             <button> <i class="fas fa-chevron-left"></i></button>
@@ -132,7 +94,7 @@ class App extends Component {
             </article>
           </section>
         </main>
-        <footer className="footer"></footer>
+        <Footer/>
       </div>
     );
   }

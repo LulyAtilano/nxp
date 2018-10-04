@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
+import { SolutionsNew } from './components/Main';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -13,37 +14,46 @@ class App extends Component {
             <button> <i class="fas fa-chevron-left"></i></button>
             <button> <i class="fas fa-chevron-right"></i></button>
           </div>
-          <section className="solutions-news">
+          <section id="solution-new">
             <h3> Solutions </h3>
-            <article>
-              <img />
-              <h5> Automotive </h5>
-              <p> Solutions that enable breakthrough Automotive
-                designs in and around the car - enhancing safety
-                and the driver experience.
-              </p>
-              <div className="links-news">
-                <ul>>
-                  <li>
-                    <a> Advanced Driver Assistance Systems (ADAS) and 
-                      Autonomus Driving
-                    </a>
-                  </li>
-                  <li>
-                    <a> Secure Vehicle Architecture </a>
-                  </li>
-                  <li>
-                    <a> Instrument Clusters </a>
-                  </li>
-                  <li>
-                    <a> Infotainment </a>
-                  </li>
-                  <li>
-                    <a> All Automotive </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
+            <SolutionsNew
+              src="../public/assets/automotive-solution-hero.jpg"
+              subtitle="Automotive"
+              description="Solutions that enable breakthrough Automotive
+                      designs in and around the car - enhancing safety
+                      and the driver experience."
+              link1="Advanced Driver Assistance Systems (ADAS) and Autonomous Driving"
+              link2="Secure Vehicle Architecture"
+              link3="Instrument Clusters"
+              link4="Infotainment"
+              link5="All Automotive"
+            />
+            <SolutionsNew
+              src=""
+              subtitle="Industrial"
+              description="Enable fast connectivity between industrial and
+              commercial systems to help your design perform under the most 
+              extreme conditions."
+              link1="Factory Automation"
+              link2="Human Machine Interfaces (HM)"
+              link3="Home and Building Control"
+              link4="Industrial Connectivity"
+              link5="Motion and Motor Control"
+              link6="Power and Energy"
+              link7="All industrial"
+            />
+            <SolutionsNew
+              src=""
+              subtitle="Internet of Things (IoT)"
+              description="We're driving technology innovation in the Internet
+              of Things to empower you to develop smart, connected and
+              secure things."
+              link1="Connected Things"
+              link2="Edge Computing"
+              link3="Secure Things"
+              link4="Smart Things"
+              link5="All IoT"
+            />
           </section>
           <section className="developer-resources">
             <h3> Developer Resources </h3>

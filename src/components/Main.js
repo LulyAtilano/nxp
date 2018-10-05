@@ -131,3 +131,15 @@ Product.propTypes = {
     link6: PropTypes.string,
     link7: PropTypes.string
 };
+
+export class Carousel extends React.Component { 
+    render() { 
+        return (
+            <section className="carousel">
+                <img src="../../assets/carousel-auto.png"/>
+                <button> <i className="fas fa-chevron-left" id="btn-left-carousel"></i></button>
+                <button> <i className="fas fa-chevron-right" id="btn-right-carousel"></i></button>
+          </section>
+        );
+    }
+}

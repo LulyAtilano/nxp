@@ -35,7 +35,7 @@ class Footer extends React.Component {
                         <h5 className="white-text"> FOLLOW US </h5>
                         <ul>
                             <li>
-                                 <i className="fab fa-twitter-square blue-text"></i>
+                                <i className="fab fa-twitter-square blue-text"></i>
                             </li>
                             <li>
                                 <i className="fab fa-linkedin blue-text"></i>
@@ -44,15 +44,15 @@ class Footer extends React.Component {
                                 <i className="fab fa-facebook-square blue-text"></i>
                             </li>
                             <li>
-                                <i className="fas fa-envelope-square blue-text"></i>
+                                <i className="fas fa-envelope-square"></i>
                             </li>
                         </ul>
                     </div>
                     <div id="news">
                         <h5 className="white-text"> News 10Sep2018
                             <span> 
-                                <i class="fas fa-chevron-left blue-text"></i>
-                                <i class="fas fa-chevron-right blue-text"></i>
+                                <i className="fas fa-chevron-left"></i>
+                                <i className="fas fa-chevron-right"></i>
                             </span>
                         </h5>
                         <p className="white-text"> NXP Semiconductors Announces the Initiation of 

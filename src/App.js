@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import { SolutionsNew, Resource, Product } from './components/Main';
+import { SolutionsNew, Resource, Product, Carousel } from './components/Main';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -10,12 +10,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <main className="main">
-          <section className="carousel">
-            <div>
-              <button> <i className="fas fa-chevron-left"></i></button>
-              <button> <i className="fas fa-chevron-right"></i></button>
-            </div>
-          </section>
+          <Carousel/>
           <section className="solution-new">
             <h2> Solutions </h2>
             <SolutionsNew

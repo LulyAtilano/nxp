@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import { SolutionsNew, Resource, Product, Carousel } from './components/Main';
-import Footer from './components/Footer';
+import { Footer } from './components/Footer';
+//import NewsApi from './components/NewsApi';
 import './App.css';
 
 class App extends Component {
@@ -120,6 +121,7 @@ class App extends Component {
           </section>
         </main>
           <Footer/>
+          />
       </div>
     );
   }

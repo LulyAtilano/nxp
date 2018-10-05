@@ -41,6 +41,13 @@
   flex-direction: row;
 }
 
+.solution-new .img-solutions {
+  width: 31%;
+  height: 6em;
+  display: inline-flex;
+  margin: 1%;
+}
+
 .developer-resources {
   background-color: #F4F4F5;
 }

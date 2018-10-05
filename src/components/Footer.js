@@ -1,7 +1,8 @@
 import React from 'react';
+//import NewsApi from './NewsApi';
 import './Footer.css';
 
-class Footer extends React.Component {
+export class Footer extends React.Component {
     render() {
         return (
             <footer className="footer"> 
@@ -48,18 +49,7 @@ class Footer extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div id="news">
-                        <h5 className="white-text"> News 10Sep2018
-                            <span> 
-                                <i className="fas fa-chevron-left"></i>
-                                <i className="fas fa-chevron-right"></i>
-                            </span>
-                        </h5>
-                        <p className="white-text"> NXP Semiconductors Announces the Initiation of 
-                            a Quartely Dividend Program
-                        </p>
-                        <h4 className="blue-text"> Read More </h4>
-                    </div>
+                    <NewsFooter/>
                 </section>
                 <section id="lower-row-footer">
                     <div id="terms-section">
@@ -77,4 +67,23 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export class NewsFooter extends React.Component {
+    render() {
+        const articles = this.props.article;
+        return (
+            <div id="news">
+                <h5 className="white-text"> { articles }
+                    <span> 
+                        <i className="fas fa-chevron-left"></i>
+                        <i className="fas fa-chevron-right"></i>
+                    </span>
+                </h5>
+                <p className="white-text"> { articles }
+                </p>
+                <h4 className="blue-text"> Read More 
+                    <a> { articles } </a>
+                </h4>
+            </div>
+        );
+    }
+}

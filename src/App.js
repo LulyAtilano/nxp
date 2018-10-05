@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import { SolutionsNew } from './components/Main';
+import { SolutionsNew, Resource, Product } from './components/Main';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -10,14 +10,15 @@ class App extends Component {
       <div className="App">
         <Header/>
         <main className="main">
-          <div className="carousel">
-            <button> <i class="fas fa-chevron-left"></i></button>
-            <button> <i class="fas fa-chevron-right"></i></button>
-          </div>
-          <section id="solution-new">
-            <h3> Solutions </h3>
+          <section className="carousel">
+            <div>
+              <button> <i className="fas fa-chevron-left"></i></button>
+              <button> <i className="fas fa-chevron-right"></i></button>
+            </div>
+          </section>
+          <section className="solution-new">
+            <h2> Solutions </h2>
             <SolutionsNew
-              src="../public/assets/automotive-solution-hero.jpg"
               subtitle="Automotive"
               description="Solutions that enable breakthrough Automotive
                       designs in and around the car - enhancing safety
@@ -56,55 +57,68 @@ class App extends Component {
             />
           </section>
           <section className="developer-resources">
-            <h3> Developer Resources </h3>
-            <article>
-              <h5> Hardware </h5>
-              <div className="links-news">
-                <ul>>
-                  <li>
-                    <a> Evaluation and Development Boards
-                    </a>
-                  </li>
-                  <li>
-                    <a> NXP Designs Reference Design Library </a>
-                  </li>
-                  <li>
-                    <a> Community Boards </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
+            <h2> Developer Resources </h2>
+            <Resource
+              subtitle="Hardware"
+              link1="Evaluation and Development Boards"
+              link2="NXP Designs Reference Design Library"
+              link3="Community Boards"
+            />
+            <Resource
+              subtitle="Software"
+              link1="Software Development Tools"
+              link2="Run-time Software"
+              link3="Software Center"
+            />
+            <Resource
+              subtitle="Get Help"
+              link1="Communities"
+              link2="Documentation"
+              link3="Training and Events"
+            />
           </section>
           <section className="products-list">
-            <h3> Products </h3>
-            <article>
-              <h5> Processors & Microcontrollers (MCUSs) </h5>
-              <div className="links-products-list">
-                <ul>>
-                  <li>
-                    <a> Arm-based Processors </a>
-                  </li>
-                  <li>
-                    <a> i.MX Applications Processors </a>
-                  </li>
-                  <li>
-                    <a> Kinetis Cortex-M MCUs </a>
-                  </li>
-                  <li>
-                    <a> LPC Cortex-M MCUs </a>
-                  </li>
-                  <li>
-                    <a> QorlQ Arm-based SoCs </a>
-                  </li>
-                  <li>
-                    <a> All MCUs and Processors </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
+            <h2> Products </h2>
+            <Product
+              subtitle="Processors & Microcontrollers (MCUSs)"
+              link1="Arm-based Processors"
+              link2="i.MX Applications Processors"
+              link3="Kinetis Cortex-M MCUs"
+              link4="LPC Cortex-M MCUs"
+              link5="QorlQ Arm-based SoCs"
+              link6="All MCUs and Processors"
+            />
+            <Product
+              subtitle="Wireless"
+              link1="Bluetooth Low Energy (BLE)"
+              link2="MIFARE"
+              link3="NFC"
+              link4="Thread"
+              link5="Wireless Power"
+              link6="Zigbee"
+              link7="All Wireless"
+            />
+            <Product
+              subtitle="Automotive"
+              link1="In-Vehicle Network"
+              link2="MCUs and Processors"
+              link3="Radar"
+              link4="Secure Car Access"
+              link5="All Automotive"
+            />
+            <Product
+              subtitle="More Products"
+              link1="Analog"
+              link2="Identification"
+              link3="Media and Audio"
+              link4="Power Management"
+              link5="RF"
+              link6="Sensors"
+              link7="All Products"
+            />
           </section>
         </main>
-        <Footer/>
+          <Footer/>
       </div>
     );
   }

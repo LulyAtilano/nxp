@@ -62,3 +62,25 @@ h2 {
 .products-section .links ul {
     margin: 0;
 }
+
+.carousel {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel > button {
+    background-color: transparent;
+    font-size: 2em;
+    border: none;
+    color: gray;
+    display: none;
+}
+
+.carousel > button#btn-right-carousel {
+    float: right;
+    border: 1px solid red;
+}

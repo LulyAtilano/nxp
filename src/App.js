@@ -13,11 +13,17 @@ class App extends Component {
           <Carousel/>
           <section className="solution-new">
             <h2> Solutions </h2>
+            <div>
+              <img className="img-solutions"src="../../assets/automotive-solution-hero.jpg"/>
+              <img className="img-solutions"src="../../assets/Industrial-Solutions-hero-banner.jpg"/>
+              <img className="img-solutions"src="../../assets/hero-iot.jpg"/>
+            </div>
             <SolutionsNew
               subtitle="Automotive"
               description="Solutions that enable breakthrough Automotive
                       designs in and around the car - enhancing safety
                       and the driver experience."
+              photo="automotive-solution-hero.jpg"
               link1="Advanced Driver Assistance Systems (ADAS) and Autonomous Driving"
               link2="Secure Vehicle Architecture"
               link3="Instrument Clusters"

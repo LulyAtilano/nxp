@@ -28,18 +28,13 @@
   background-color: #4A4A4D;
   height: 25vh;
 }
-
-.carousel, 
+ 
 .solution-new, 
 .developer-resources, 
 .products-list {
   box-sizing: border-box;
   padding: 20px 10%;
   width: 100%;
-}
-
-.carousel {
-  border: 1px solid red;
 }
 
 .solution-new {

@@ -2,12 +2,57 @@
   margin: 0;
   padding: 0;
   background-color: white;
-  border: 1px solid black;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
+}
+
+.header, .main, .footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 15vh;
+}
+
+.main {
+  height: 60vh;
+}
+
+.footer {
+  background-color: #4A4A4D;
+  height: 25vh;
+}
+
+.carousel, 
+.solution-new, 
+.developer-resources, 
+.products-list {
+  box-sizing: border-box;
+  padding: 20px 10%;
+  width: 100%;
+}
+
+.carousel {
+  border: 1px solid red;
+}
+
+.solution-new {
+  flex-direction: row;
+}
+
+.developer-resources {
+  background-color: #F4F4F5;
+}
+
+
+.products-list > h2 {
+  margin-bottom: 5px;
 }
 
 ul {
